@@ -10,6 +10,9 @@ export class AuTabComponent implements OnInit {
   @Input()
   title: string;
 
+  @Input()
+  selected: boolean;
+
   constructor() {
   }
 
