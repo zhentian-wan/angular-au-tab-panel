@@ -10,7 +10,7 @@
     <button (click)="tabPanel.selectTab(signUpTab)">Sign up</button>
   </ng-template>
 
-    <au-tab-panel #tabPanel [headerTemplate]="headerButtons">
+    <au-tab-panel id="tab-panel" #tabPanel>
 
       <au-tab title="login" #loginTab>
         <form>
@@ -18,7 +18,7 @@
             <label>Email:</label><input>
           </div>
           <div class="form-field">
-            <label>Password:</label><input>
+            <label>Password:</label><input class="login-password">
           </div>
         </form>
       </au-tab>
@@ -40,7 +40,7 @@
       <au-tab title="Contact">
         <form>
           <div class="form-field">
-            <label>Email:</label><input>
+            <label>Email:</label><input class="contact-email">
           </div>
           <div class="form-field">
             <label>Message:</label>
